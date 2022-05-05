@@ -251,17 +251,16 @@ body {
     padding: 30px 65px;
     background: #222;
     color: #fff;
-    max-width: 325px;
     margin: 20px;
     text-align: center;
     transition: 0.5s;
 }
 
-.about .aboutBX:hover {
+/* .about .aboutBX:hover {
     background: #ac3737;
     color: #081921;
     transform: scale(1.1);
-}
+} */
 
 .about .aboutBX img {
     max-width: 80px;
@@ -281,9 +280,8 @@ body {
 }
 
 .about .aboutBX p {
-    text-align: left;
-    font-weight: bolder;
-    width: 240px;
-    height: 220px;
+    text-align: justify;
+    width: auto;
+    height: auto;
     line-height: 1.7;
 }
