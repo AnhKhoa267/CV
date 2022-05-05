@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family:'Poppins', sans-serif;
+    list-style: none;
 }
 
 body {
@@ -148,7 +149,7 @@ body {
     text-decoration: none;
 }
 
-.contactInfo.language .percent {
+/* .contactInfo.language .percent {
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: #353b48;
@@ -165,9 +166,47 @@ body {
     float: left;
     height: 6px;
     background: #03a9f4;
+} */
+
+.profileText {
+    padding-top: 40px;
 }
 
-.Cplusplus {
+.skills .li_wrap,
+.hobbies .li_wrap{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    /* background: #292b2f; */
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills .li_wrap{
+    background: #222;
+}
+
+.skills .li_wrap .text,
+.hobbies .li_wrap .text{
+    margin-top: 5px;
+    color: #fff;
+}
+
+.skills ul, .hobbies ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.icon {
+    color: #03a9f4;
+    font-size: 20px;
+}
+
+/* .Cplusplus {
     width: 80%;
     animation: Cplusplus 3s;
 }
@@ -221,7 +260,7 @@ body {
     100% {
         width: 10%;
     }
-}
+} */
 
 
 /* phần bên phải */
