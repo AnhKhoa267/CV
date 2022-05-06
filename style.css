@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 * {
     margin: 0;
     padding: 0;
+    font-family: 'EB Garamond', serif;
     box-sizing: border-box;
-    font-family:'Poppins', sans-serif;
     list-style: none;
 }
 
@@ -206,121 +205,79 @@ body {
     font-size: 20px;
 }
 
-/* .Cplusplus {
-    width: 80%;
-    animation: Cplusplus 3s;
-}
-
-.Csharp {
-    width: 50%;
-    animation: Csharp 3s;
-}
-
-.HTMLCSS {
-    width: 65%;
-    animation: HTMLCSS 3s;
-}
-
-.Python {
-    width: 10%;
-    animation: Python 3s;
-}
-
-@keyframes Cplusplus {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 80%;
-    }
-}
-
-@keyframes Csharp {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 50%;
-    }
-}
-
-@keyframes HTMLCSS {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 65%;
-    }
-}
-
-@keyframes Python {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 10%;
-    }
-} */
-
-
 /* phần bên phải */
+.semi-bold {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.container .title {
+    margin-bottom: 20px;
+}
+
+.container .resume_item {
+    padding: 25px 0;
+    border-bottom: 2px solid #b1eaff;
+}
 
 .container .right-slide {
+    width: 520px;
+    background: #fff;
+    padding: 25px;
+}
+  
+.container .right-slide .bold {
+    color: #0bb5f4;
+}
+
+
+.container .right-slide .resume_work ul,
+.container .right-slide .resume_education ul,
+.container .right-slide .resume_about ul {
+    padding-left: 40px;
+    overflow: hidden;
+}
+
+.container .right-slide ul li {
     position: relative;
-    padding: 40px;
-    background: #A7B3C8;
 }
 
-.about {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
+.container .right-slide ul li .date {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #1a59e2;
 }
 
-.heading h2 {
-    text-align: center;
+.container .right-slide ul li .info {
+    margin-bottom: 20px;
 }
 
-.heading h2::selection {
-    color: #ac3737;
+.container .right-slide ul li:last-child .info {
+    margin-bottom: 0;
 }
 
-.about .aboutBX {
-    padding: 30px 65px;
-    background: #222;
-    color: #fff;
-    margin: 20px;
-    text-align: center;
-    transition: 0.5s;
+.container .right-slide .resume_about ul li:before,
+.container .right-slide .resume_work ul li:before,
+.container .right-slide .resume_education ul li:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 2px solid #0bb5f4;
 }
 
-/* .about .aboutBX:hover {
-    background: #ac3737;
-    color: #081921;
-    transform: scale(1.1);
-} */
-
-.about .aboutBX img {
-    max-width: 80px;
-    filter: invert(1);
-}
-
-.about .aboutBX h2 {
-    text-align: center;
-    font-size:20px;
-    font-weight: 600; 
-    line-height: 2;
-}
-.about .aboutBX p::selection,
-.about .aboutBX h2::selection,
-.about .aboutBX p b::selection {
-    color:#fff;
-}
-
-.about .aboutBX p {
-    text-align: justify;
-    width: auto;
-    height: auto;
-    line-height: 1.7;
+.container .right-slide .resume_about ul li:after,
+.container .right-slide .resume_work ul li:after,
+.container .right-slide .resume_education ul li:after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -21px;
+    width: 2px;
+    height: 115px;
+    background: #0bb5f4;
 }
